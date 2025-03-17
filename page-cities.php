@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', function () {
         })
         .then(response => response.json())
         .then(data => {
-            console.log(data);
             let tableBody = document.querySelector('#city-weather-table tbody');
             tableBody.innerHTML = '';
             data.forEach(city => {
